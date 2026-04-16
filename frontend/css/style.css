@@ -134,16 +134,31 @@ body {
   border: 1px solid #334155;
   box-shadow: 0 14px 30px rgba(2, 6, 23, 0.5);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.event-card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #22d3ee, #3b82f6, #a855f7);
+  opacity: 0.9;
 }
 
 .event-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 34px rgba(2, 6, 23, 0.65);
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 22px 40px rgba(2, 6, 23, 0.7);
   border-color: #60a5fa;
 }
 
 .event-card h3 {
-  margin: 0 0 8px;
+  margin: 0 0 10px;
+  font-size: 1.08rem;
+  color: #f8fafc;
 }
 
 .event-card p {
@@ -154,6 +169,19 @@ body {
 .detail-card {
   display: grid;
   gap: 8px;
+  padding-top: 16px;
+}
+
+.detail-card p {
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(71, 85, 105, 0.5);
+  border-radius: 10px;
+  padding: 9px 10px;
+}
+
+.detail-card strong {
+  color: #93c5fd;
+  font-weight: 700;
 }
 
 .info-grid {
@@ -274,14 +302,21 @@ textarea:focus {
 
 .card-link {
   display: inline-block;
-  margin-top: 14px;
+  margin-top: 16px;
   text-decoration: none;
-  color: #1d4ed8;
+  color: #e2e8f0;
   font-weight: 700;
+  background: linear-gradient(120deg, #2563eb, #3b82f6);
+  border: 1px solid rgba(147, 197, 253, 0.35);
+  border-radius: 999px;
+  padding: 8px 12px;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
 }
 
 .card-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  filter: brightness(1.08);
+  transform: translateY(-1px);
 }
 
 .college-hero {
