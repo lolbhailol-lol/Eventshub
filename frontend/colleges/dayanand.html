@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dayanand College Events - Latur Event Discovery</title>
+  <title>Dayanand College Events - EventsHub</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <nav class="navbar">
     <div class="container nav-content">
-      <a href="../index.html" class="brand">Latur Event Discovery</a>
+      <a href="../index.html" class="brand">EventsHub</a>
       <div class="nav-links">
         <a href="../index.html">Home</a>
         <a href="../login.html">Login</a>
@@ -19,12 +19,54 @@
   </nav>
 
   <main class="container page-content">
-    <section class="college-hero c2"><h1>Dayanand College</h1><p>Cultural and literary events throughout the semester.</p></section>
+    <section class="college-hero c2"><h1>Dayanand College</h1><p>Cultural and literary events with artist collaborations and open campus showcases.</p></section>
     <section class="events-grid">
-      <article class="event-card"><h3>Rhythm Night</h3><p>Dance and music performances by student clubs.</p></article>
-      <article class="event-card"><h3>Poetry Circle</h3><p>Open mic and spoken-word showcase event.</p></article>
-      <article class="event-card"><h3>Fine Arts Expo</h3><p>Painting, sketching, and digital art exhibition.</p></article>
+      <article class="event-card detail-card"><h3>Rhythm Night</h3><p><strong>Date:</strong> 20 Sep 2026 | <strong>Time:</strong> 6:00 PM</p><p><strong>Venue:</strong> Open Air Stage</p><p><strong>Highlights:</strong> Band battles, folk dance finals, celebrity guest act.</p></article>
+      <article class="event-card detail-card"><h3>Poetry Circle</h3><p><strong>Date:</strong> 21 Sep 2026 | <strong>Venue:</strong> Literature Hall</p><p><strong>Theme:</strong> Youth voices and social storytelling.</p><p><strong>Entry:</strong> Free with college ID</p></article>
+      <article class="event-card detail-card"><h3>Fine Arts Expo</h3><p><strong>Date:</strong> 22 Sep 2026 | <strong>Venue:</strong> Art Gallery Block</p><p><strong>Highlights:</strong> Live sketch, digital art wall, jury evaluation.</p><p><strong>Prize Pool:</strong> Rs. 20,000</p></article>
+    </section>
+
+    <section class="info-grid">
+      <article class="event-card info-card">
+        <h3>About Dayanand Events Cell</h3>
+        <p>The events cell curates cultural and literary programs and coordinates artist interactions for students.</p>
+        <p class="contact-line"><strong>Contact Email:</strong> eventhub0120@gmail.com</p>
+      </article>
+      <article class="event-card info-card">
+        <h3>Help Center</h3>
+        <p>Need help with registration confirmation, participant passes, or performance slots? Contact support below.</p>
+        <ul class="help-list">
+          <li>Response time: within 1 business day</li>
+          <li>Support window: 10:00 AM to 5:30 PM</li>
+          <li>Student support desk in Admin Block</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="info-grid">
+      <article class="event-card info-card">
+        <h3>Event Enquiry Box</h3>
+        <form class="enquiry-form">
+          <label for="dayName">Your Name</label>
+          <input id="dayName" type="text" placeholder="Enter your name">
+          <label for="dayEmail">Your Email</label>
+          <input id="dayEmail" type="email" placeholder="Enter your email">
+          <label for="dayMessage">Your Query</label>
+          <textarea id="dayMessage" rows="4" placeholder="Ask about auditions, entries, stage timings, or certificates"></textarea>
+          <button type="button">Send Enquiry</button>
+        </form>
+      </article>
+      <article class="event-card info-card">
+        <h3>Google Location</h3>
+        <iframe class="map-embed" src="https://www.google.com/maps?q=Dayanand+College+Latur&output=embed" title="Dayanand College Latur map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </article>
     </section>
   </main>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>EventsHub - Dayanand College Event Desk</p>
+      <p><a href="mailto:eventhub0120@gmail.com">eventhub0120@gmail.com</a></p>
+    </div>
+  </footer>
 </body>
 </html>

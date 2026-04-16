@@ -5,8 +5,6 @@ import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from .database import Base, engine
-from . import models
 from .routes.user import router as user_router
 
 app = FastAPI()
@@ -20,13 +18,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 app.include_router(user_router, prefix="/auth")
-
-
-@app.on_event("startup")
-def on_startup() -> None:
-    # Importing models ensures SQLAlchemy metadata is populated.
-    models  # no-op reference to satisfy linters about import usage
-    Base.metadata.create_all(bind=engine)
 
 
 @app.get("/")

@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>M.S.M. College Events - Latur Event Discovery</title>
+  <title>M.S.M. College Events - EventsHub</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <nav class="navbar">
     <div class="container nav-content">
-      <a href="../index.html" class="brand">Latur Event Discovery</a>
+      <a href="../index.html" class="brand">EventsHub</a>
       <div class="nav-links">
         <a href="../index.html">Home</a>
         <a href="../login.html">Login</a>
@@ -19,12 +19,54 @@
   </nav>
 
   <main class="container page-content">
-    <section class="college-hero c5"><h1>M.S.M. College</h1><p>Academic excellence and future-ready student events.</p></section>
+    <section class="college-hero c5"><h1>M.S.M. College</h1><p>Future-ready academic events focused on career growth and innovation mindset.</p></section>
     <section class="events-grid">
-      <article class="event-card"><h3>Career Compass</h3><p>Career guidance and alumni interaction sessions.</p></article>
-      <article class="event-card"><h3>Innovation Talks</h3><p>Expert sessions on technology and social impact.</p></article>
-      <article class="event-card"><h3>Community Connect</h3><p>Volunteer and outreach activities with local groups.</p></article>
+      <article class="event-card detail-card"><h3>Career Compass</h3><p><strong>Date:</strong> 18 Dec 2026 | <strong>Venue:</strong> Career Guidance Cell</p><p><strong>Highlights:</strong> Resume clinic, interview simulation, alumni mentoring.</p><p><strong>Best For:</strong> Final year students</p></article>
+      <article class="event-card detail-card"><h3>Innovation Talks</h3><p><strong>Date:</strong> 19 Dec 2026 | <strong>Venue:</strong> Smart Classroom Hall</p><p><strong>Speakers:</strong> Startup founders, product engineers, researchers.</p><p><strong>Theme:</strong> Technology for social impact</p></article>
+      <article class="event-card detail-card"><h3>Community Connect</h3><p><strong>Date:</strong> 20 Dec 2026 | <strong>Venue:</strong> NSS Activity Center</p><p><strong>Activities:</strong> NGO drives, blood donation, awareness campaigns.</p><p><strong>Perk:</strong> Volunteer hour credits</p></article>
+    </section>
+
+    <section class="info-grid">
+      <article class="event-card info-card">
+        <h3>About MSM Student Desk</h3>
+        <p>MSM Student Desk coordinates career events, innovation programs, and volunteer opportunities.</p>
+        <p class="contact-line"><strong>Contact Email:</strong> eventhub0120@gmail.com</p>
+      </article>
+      <article class="event-card info-card">
+        <h3>Help Center</h3>
+        <p>Need registration help, slot details, mentor list, or venue guidance? Use support options below.</p>
+        <ul class="help-list">
+          <li>Query status updates via email</li>
+          <li>Event pass support for outside colleges</li>
+          <li>Assistance for volunteer onboarding</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="info-grid">
+      <article class="event-card info-card">
+        <h3>Event Enquiry Box</h3>
+        <form class="enquiry-form">
+          <label for="msmName">Your Name</label>
+          <input id="msmName" type="text" placeholder="Enter your name">
+          <label for="msmEmail">Your Email</label>
+          <input id="msmEmail" type="email" placeholder="Enter your email">
+          <label for="msmMessage">Your Query</label>
+          <textarea id="msmMessage" rows="4" placeholder="Ask about career sessions, talk timings, or volunteer work"></textarea>
+          <button type="button">Send Enquiry</button>
+        </form>
+      </article>
+      <article class="event-card info-card">
+        <h3>Google Location</h3>
+        <iframe class="map-embed" src="https://www.google.com/maps?q=MSM+College+Latur&output=embed" title="MSM College Latur map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </article>
     </section>
   </main>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>EventsHub - MSM College Event Desk</p>
+      <p><a href="mailto:eventhub0120@gmail.com">eventhub0120@gmail.com</a></p>
+    </div>
+  </footer>
 </body>
 </html>

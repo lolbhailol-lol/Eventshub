@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MIT College Events - Latur Event Discovery</title>
+  <title>MIT College Events - EventsHub</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <nav class="navbar">
     <div class="container nav-content">
-      <a href="../index.html" class="brand">Latur Event Discovery</a>
+      <a href="../index.html" class="brand">EventsHub</a>
       <div class="nav-links">
         <a href="../index.html">Home</a>
         <a href="../login.html">Login</a>
@@ -19,12 +19,54 @@
   </nav>
 
   <main class="container page-content">
-    <section class="college-hero c1"><h1>MIT College, Latur</h1><p>Innovation-led events and technical festivals.</p></section>
+    <section class="college-hero c1"><h1>MIT College, Latur</h1><p>Innovation-led technical festivals with industry mentoring and startup exposure.</p></section>
     <section class="events-grid">
-      <article class="event-card"><h3>Tech Spark 2026</h3><p>Hackathon, AI demos, and coding sprint challenges.</p></article>
-      <article class="event-card"><h3>Robo Arena</h3><p>Student robotics league with obstacle challenges.</p></article>
-      <article class="event-card"><h3>Design Sprint</h3><p>UI/UX and product thinking workshop with mentors.</p></article>
+      <article class="event-card detail-card"><h3>Tech Spark 2026</h3><p><strong>Date:</strong> 12 Aug 2026 | <strong>Venue:</strong> Main Auditorium</p><p><strong>Highlights:</strong> 24-hour hackathon, AI showcase, cloud challenge, internship booth.</p><p><strong>Fee:</strong> Rs. 250/team</p></article>
+      <article class="event-card detail-card"><h3>Robo Arena</h3><p><strong>Date:</strong> 13 Aug 2026 | <strong>Venue:</strong> Mechanical Lab Arena</p><p><strong>Highlights:</strong> Line follower race, bot battle, obstacle track finals.</p><p><strong>Prizes:</strong> Rs. 30,000 total</p></article>
+      <article class="event-card detail-card"><h3>Design Sprint</h3><p><strong>Date:</strong> 14 Aug 2026 | <strong>Venue:</strong> Innovation Cell</p><p><strong>Highlights:</strong> UX case study, prototyping workshop, mentor feedback round.</p><p><strong>Seats:</strong> Limited to 120 students</p></article>
+    </section>
+
+    <section class="info-grid">
+      <article class="event-card info-card">
+        <h3>About MIT Fest Desk</h3>
+        <p>MIT Fest Desk supports student registrations, team verification, and event updates across all technical events.</p>
+        <p class="contact-line"><strong>Contact Email:</strong> eventhub0120@gmail.com</p>
+      </article>
+      <article class="event-card info-card">
+        <h3>Help Center</h3>
+        <p>Need slot change, team name correction, or participation certificate support? Reach us through the enquiry form.</p>
+        <ul class="help-list">
+          <li>Response time: within 24 hours</li>
+          <li>Support: 9:00 AM to 6:00 PM</li>
+          <li>Escalation: eventhub0120@gmail.com</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="info-grid">
+      <article class="event-card info-card">
+        <h3>Event Enquiry Box</h3>
+        <form class="enquiry-form">
+          <label for="mitName">Your Name</label>
+          <input id="mitName" type="text" placeholder="Enter your name">
+          <label for="mitEmail">Your Email</label>
+          <input id="mitEmail" type="email" placeholder="Enter your email">
+          <label for="mitMessage">Your Query</label>
+          <textarea id="mitMessage" rows="4" placeholder="Ask about schedule, registration, venue, or passes"></textarea>
+          <button type="button">Send Enquiry</button>
+        </form>
+      </article>
+      <article class="event-card info-card">
+        <h3>Google Location</h3>
+        <iframe class="map-embed" src="https://www.google.com/maps?q=MIT+College+Latur&output=embed" title="MIT College Latur map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </article>
     </section>
   </main>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>EventsHub - MIT College Event Desk</p>
+      <p><a href="mailto:eventhub0120@gmail.com">eventhub0120@gmail.com</a></p>
+    </div>
+  </footer>
 </body>
 </html>
